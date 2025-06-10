@@ -4,3 +4,12 @@
 @theme {
   --font-primary:  "Poppins", "sans-serif";
 }
+
+/* styles.css or inside <style> tag */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
