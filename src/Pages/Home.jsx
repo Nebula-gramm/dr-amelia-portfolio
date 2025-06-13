@@ -1,9 +1,23 @@
 import React from 'react';
+import ImgAndTextSection from '../Components/ImgAndTextSection';
+import ServiceSection from '../Components/ServiceSection';
+import AboutSection from '../Components/AboutSection';
 
 const Home = () => {
     return (
-        <div>
-            <h1 className='text-3xl font-primary'>This is Home!</h1>
+        <div className='w-full px-4 '>
+            <div>
+                <ImgAndTextSection/>
+            </div>
+            <div>
+                <ServiceSection/>
+            </div>
+            <div>
+                <AboutSection/>
+            </div>
+            <div>
+                latest news section
+            </div>
         </div>
     );
 };

@@ -1,4 +1,5 @@
 import { IoReorderThreeOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
 const Drawer = () => {
   return (
@@ -22,11 +23,55 @@ const Drawer = () => {
           ></label>
           <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
             {/* Sidebar content here */}
-            <li>
-              <a>Sidebar Item 1</a>
+            <li className="hover:underline">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "underline" : ""
+                }
+              >
+                Home
+              </NavLink>
             </li>
-            <li>
-              <a>Sidebar Item 2</a>
+            <li className="hover:underline">
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  isActive ? "underline" : ""
+                }
+              >
+                Services
+              </NavLink>
+            </li>
+            <li className="hover:underline">
+              <NavLink
+                to="/blog"
+                className={({ isActive }) =>
+                  isActive ? "underline" : ""
+                }
+              >
+                Blog
+              </NavLink>
+            </li>
+            <li className="hover:underline">
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "underline" : ""
+                }
+              >
+                Contact
+              </NavLink>
+            </li>
+            <li className="hover:underline">
+              <NavLink
+                to="/register"
+                className={({ isActive }) =>
+                  isActive ? "underline" : ""
+                }
+              >
+                Book Appointment
+              </NavLink>
             </li>
           </ul>
         </div>
